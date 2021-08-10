@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML- Hint Project 01(d)</title>
+    <style>
+      html {
+        box-sizing: border-box;
+        
+      }
+      body,
+      *,
+      ::after,
+      ::before {
+        box-sizing: inherit;
+        padding: 0;
+        margin: 0;
+      }
+     
+      header,
+      main,
+      footer,
+      aside,
+      .main-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+
+        border: 2px solid;
+        margin-inline:auto;
+      }
+      header,
+      main,
+      aside,
+      footer {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.4rem;
+      }
+    
+      header {
+        min-height: 20vh;
+        background:  rgb(254, 201, 253,0.5);
+      }
+      main {
+        min-height: 60%;
+
+      }
+      footer {
+        min-height: 20vh;
+        background: #cb87f6;
+      }
+
+      main > * {
+        height: 100%;
+      }
+      main aside {
+        width: 20%;
+        flex: 1 1 20%;
+        background: #ff99ff;
+      }
+      .main-content {
+        flex: 1 1 80%;
+      }
+      footer {
+        min-height: 20vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <main>
+        <div class="main-content">Main Content</div>
+        <aside>
+          Right <br />
+          Panel
+        </aside>
+      </main>
+      <footer>Footer Section</footer>
+    </div>
+  </body>
+</html>

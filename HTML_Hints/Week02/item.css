@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+}
+body,
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: linear-gradient(0deg, white, #7dc7c0) !important;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  padding: 40px;
+  width: 80%;
+  margin-inline: auto;
+  justify-content: space-around;
+  max-height: 100vh;
+}
+.label-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+select {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  border: none;
+}
+.product-details a {
+  color: #b25eb3 !important;
+}
+.btn {
+  font-size: 16px;
+  padding: 0.4em 1.3em;
+  width: 20%;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background: #99e2db;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.image-container {
+  justify-self: center;
+}
+.product-details {
+  justify-self: start;
+  color: black;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.product-details > * {
+  margin-bottom: 20px;
+}
+
+.sm-con,
+.product-details p {
+  width: 70%;
+}
+
+.product-details h3 {
+  font-size: 2.5em;
+}
+.price {
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+@media screen and (max-width: 649px) {
+  .main {
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .product-details {
+    width: 100%;
+  }
+  .product-details h3 {
+    font-size: initial;
+  }
+  .product-details > * {
+    margin-bottom: 0px;
+  }
+  .image-container {
+    height: 100vh;
+    display: flex;
+  }
+  img {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 1024px) {
+  .main {
+    margin-top: 10px;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .image-container {
+    flex: 1 1 70%;
+  }
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
+  a {
+    color: black !important;
+  }
+  a:hover {
+    color: #9fa8da;
+  }
+}

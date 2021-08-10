@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pradeep-Shopify</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Product_Landing_Page.css" />
+  </head>
+  <body>
+    <div class="index-section">
+      <div class="d-flex nav-styles">
+        <nav>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"
+            ><span class="nav-icon"></span
+          ></label>
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Blog</a></li>
+            <li>
+              <a href="login-page.html">SignUP/LogIn </a>
+            </li>
+          </ul>
+          <ul class="down">
+            <li><a href="#">Home</a></li>
+            <li></li>
+          </ul>
+        </nav>
+        <div class="intro-text">
+          <div>
+            <h2 style="margin-bottom: 10px">You expect,</h2>
+            <h2>We deliver</h2>
+          </div>
+          <p>
+            we deliver the best of fashion accessories from around the world by
+            top designer all in one place for instant access.
+          </p>
+          <a href="#" class="explore-btn"> Explore</a>
+        </div>
+      </div>
+      <div class="navigation">
+        <ul class="d-flex">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="login-page.html">SignUp/LogIn</a></li>
+          <li>
+            <div class="search-box">
+              <span class="search-icon"><i class="fa fa-search"></i></span>
+              <input type="search" name="" id="search" class="search-input" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h5>Dress Collections</h5>
+    <main>
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://webmerx.sgp1.cdn.digitaloceanspaces.com/vastraqueen/product_images/1610015426.1584013902.Fashionable_Designer_Black_Color_Stylish_Sharara_Suit.jpeg"
+            alt="Model Dress Pic"
+          />
+        </div>
+        <div class="item-details">
+          <h3>Stylish Black Sharara Suit New Model (Best Clothing)</h3>
+          <div class="price">
+            <span>MRP: ₹<span id="card1__item__price">2,495</span> INR</span>
+            <span> <s> ₹4,990.00 INR</s></span>
+          </div>
+        </div>
+        <p class="available">Availability: <span>In Stock</span></p>
+        <button onclick="makePay()" class="btn">Buy</button>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://www.fabindia.com/ccstore/v1/images/?source=/file/v1296481788050445266/products/10496962BK.10496962.f.131117.jpg&height=940&width=940"
+            alt="Model Dress Pic"
+          />
+        </div>
+        <div class="item-details">
+          <h3>Black Wool Kalidar Long Kurta New Model (Best Clothing)</h3>
+          <div class="price">
+            <span> MRP: ₹<span id="class2__item__price">1399</span> INR </span>
+            <span> <s>₹1599.00 INR</s></span>
+          </div>
+        </div>
+        <p class="available">Availability: <span>In Stock</span></p>
+        <button onclick="makePay()" class="btn">Buy</button>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://webmerx.sgp1.cdn.digitaloceanspaces.com/vastraqueen/product_images/1615039569jpg"
+            alt="Model Dress Pic"
+          />
+        </div>
+        <div class="item-details">
+          <h3>Designer Black Anarkali Dress Georgette With Lies Work</h3>
+          <div class="price">
+            <span
+              >MRP: ₹ <span id="card3__item__price">1949.00</span> INR
+            </span>
+            <span> <s>00000.00 INR</s></span>
+          </div>
+        </div>
+        <p class="available">Availability: <span>In Stock</span></p>
+        <button onclick="makePay()" class="btn">Buy</button>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://webmerx.sgp1.cdn.digitaloceanspaces.com/vastraqueen/product_images/1595334380.Beautiful_Fancy_Designer_Maroon_Color_Gown_(1).jpeg"
+            alt="Model Dress Pic"
+          />
+        </div>
+        <div class="item-details">
+          <h3>Attractive Party Wear Maroon Gown New Design</h3>
+          <div class="price">
+            <span>MRP: ₹<span id="card4__item__price">1499</span> INR </span>
+            <span> <s>₹1699.00 INR</s></span>
+          </div>
+        </div>
+        <p class="available">Availability: <span>In Stock</span></p>
+        <button onclick="makePay()" class="btn">Buy</button>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://webmerx.sgp1.cdn.digitaloceanspaces.com/vastraqueen/product_images/1618810621.Eid_Special_Gown.jpeg"
+            alt="Model Dress Pic"
+          />
+        </div>
+        <div class="item-details">
+          <h3>Peach Color Georgette Beautiful Party Wear Dress</h3>
+          <div class="price">
+            <span>MRP: <span id="card5__item__price">1799</span> INR </span>
+            <span> <s>₹2399.00 INR</s></span>
+          </div>
+        </div>
+        <p class="available">Availability: <span>In Stock</span></p>
+        <button onclick="makePay()" class="btn">Buy</button>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img
+            src="  https://webmerx.sgp1.cdn.digitaloceanspaces.com/vastraqueen/product_images/1600843735.Haevy_Taffeta_Silk_Latest_Shararar_Suit_(1).jpeg"
+            alt="Model Dress Pic"
+          />
+        </div>
+        <div class="item-details">
+          <h3>
+            Heavy Taffeta Silk Latest Sharara Suit New Latest Design For All
+          </h3>
+          <div class="price">
+            <span>MRP: <span id="class6__item_price">1599</span> INR </span>
+            <span> <s>00000.00 INR</s></span>
+          </div>
+        </div>
+        <p class="available">Availability: <span>In Stock</span></p>
+        <button onclick="makePay()" class="btn">Buy</button>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img
+            src=" https://webmerx.sgp1.cdn.digitaloceanspaces.com/vastraqueen/product_images/1606306525.Party_Wear_Red_Color_Embroidery_With_Sequin_Work_Salwar_Suit.jpeg"
+            alt="Model Dress Pic"
+          />
+        </div>
+        <div class="item-details">
+          <h3>
+            Precious Shraddha Arya Red Salwar Suit New Latest Design For All
+          </h3>
+          <div class="price">
+            <span>MRP: <span id="card7__item__price">1349</span> INR </span>
+            <span> <s>00000.00 INR</s></span>
+          </div>
+        </div>
+        <p class="available">Availability: <span>In Stock</span></p>
+        <button onclick="makePay()" class="btn">Buy</button>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://webmerx.sgp1.cdn.digitaloceanspaces.com/vastraqueen/product_images/1608542949.party_Wear_Purple_Gown.jpeg"
+            alt="Model Dress Pic"
+          />
+        </div>
+        <div class="item-details">
+          <h3>Party Wear Ruffle Glowing Purple Gown For Girls</h3>
+          <div class="price">
+            <span>MRP: ₹ <span id="card8__item__price">1399</span> INR </span>
+            <span> <s>₹1599.00 INR</s></span>
+          </div>
+        </div>
+        <p class="available">Availability: <span>In Stock</span></p>
+        <button onclick="makePay()" class="btn">Buy</button>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://webmerx.sgp1.cdn.digitaloceanspaces.com/vastraqueen/product_images/1584520297.New_Arrival_Wonderful_Yellow_Colored_Bollywood_Sharara_Suit.jpg"
+            alt="Model Dress Pic"
+          />
+        </div>
+        <div class="item-details">
+          <h3>
+            Bollywood Designer Yellow Sharara Suit New and Latest Design For
+            Young's
+          </h3>
+          <div class="price">
+            <span>MRP: ₹ <span id="card9__item__price">1499</span> INR </span>
+            <span> <s>00000.00 INR</s></span>
+          </div>
+        </div>
+        <p class="available">Availability: <span>In Stock</span></p>
+        <button onclick="makePay()" class="btn">Buy</button>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://webmerx.sgp1.cdn.digitaloceanspaces.com/vastraqueen/product_images/1584189591.Taapsee_Pannu_Wonderful_White_Colored_Bollywood_Sharara_Suit.jpg"
+            alt="Model Dress Pic"
+          />
+        </div>
+        <div class="item-details">
+          <h3>Taapsee Pannu Wonderful White Colored Bollywood Sharara Suit</h3>
+          <div class="price">
+            <span>MRP: ₹ <span id="card10__item__price">1499</span> INR </span>
+            <span> <s>₹1699.00 INR</s></span>
+          </div>
+        </div>
+        <p class="available">Availability: <span>In Stock</span></p>
+        <button onclick="makePay()" class="btn">Buy</button>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://webmerx.sgp1.cdn.digitaloceanspaces.com/vastraqueen/product_images/1615183394jpg"
+            alt="Model Dress Pic"
+          />
+        </div>
+        <div class="item-details">
+          <h3>
+            Party Wear Black Color Suit For Woman New and Latest design For Yong
+            Womnen's
+          </h3>
+          <div class="price">
+            <span>MRP: ₹ <span id="card11__item__price">1799</span> INR </span>
+            <span> <s>₹2349.00 INR</s></span>
+          </div>
+        </div>
+        <p class="available">Availability: <span>In Stock</span></p>
+        <button onclick="makePay()" class="btn">Buy</button>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img
+            src="  https://webmerx.sgp1.cdn.digitaloceanspaces.com/vastraqueen/product_images/1615035589jpg"
+            alt="Model Dress Pic"
+          />
+        </div>
+        <div class="item-details">
+          <h3>
+            Readymade Navy Blue Printed Georgette Party Wear Sharara Suit With
+            Dupatta
+          </h3>
+          <div class="price">
+            <span>MRP: ₹ <span id="card12__item__price">1599</span> INR </span>
+            <span> <s>00000.00 INR</s></span>
+          </div>
+        </div>
+        <p class="available">Availability: <span>In Stock</span></p>
+        <button onclick="makePay()" class="btn">Buy</button>
+      </div>
+    </main>
+
+    <footer class="foot-flex">
+      <div class="foot-navigation-header">
+        <h4>NAVIGATION</h4>
+        <h4>CONNECT</h4>
+      </div>
+      <hr />
+      <div class="navigation-links">
+        <div>
+          <ul>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">SHIPPING</a></li>
+            <li><a href="#">SIZE GUIDE</a></li>
+            <li><a href="#">DELIVERY</a></li>
+            <li><a href="#">RETURNS</a></li>
+            <li><a href="#">STORES</a></li>
+            <li><a href="#">LEGAL</a></li>
+          </ul>
+        </div>
+        <div class="connect_links">
+          <ul>
+            <li><a href="#">Join With Us</a></li>
+            <li>
+              <form action="#">
+                <input
+                  type="email"
+                  name=""
+                  class="footer-mail"
+                  id=""
+                  placeholder="Enter your Email"
+                />
+                <button>Join</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        <small>Made with <span>&hearts;</span> By Pradeep &copy;2021</small>
+      </p>
+    </footer>
+  </body>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script>
+    var options = {
+      key: "rzp_test_RxZQzU8tDRnEKl",
+      amount: "149900",
+      currency: "INR",
+      name: "Online Shop",
+      description: "This is For Your Checked Item Pay",
+      image:
+        "https://i.pinimg.com/originals/51/6a/dd/516add894c6ec82132725abea44f1d23.jpg",
+      order_id: "",
+      handler: function (response) {
+        alert(response.razorpay_payment_id);
+      },
+      prefill: {
+        name: "You Name",
+        email: "example@gmail.com",
+        contact: "Enter Your Mobile Number",
+      },
+      notes: {
+        address: "Example Corpration NYC",
+      },
+      theme: {
+        color: "#77bdb6",
+      },
+    };
+
+    var rzp1 = new Razorpay(options);
+    rzp1.on("payment.failed", function (response) {
+      alert(response.error.code);
+      alert(response.error.description);
+      alert(response.error.source);
+      alert(response.error.step);
+      alert(response.error.reason);
+      alert(response.error.metadata.order_id);
+      alert(response.error.metadata.payment_id);
+    });
+
+    function makePay() {
+      rzp1.open();
+      e.preventDefault();
+    }
+  </script>
+</html>

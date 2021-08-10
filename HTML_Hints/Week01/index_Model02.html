@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML- Hint Project 01(b)</title>
+    <style>
+      html {
+        box-sizing: border-box;
+        --background-color: rgb(255, 223, 255);
+     --border-color: rgb(77, 199, 77);
+      }
+      body,
+      *,
+      ::after,
+      ::before {
+        box-sizing: inherit;
+        padding: 0;
+        margin: 0;
+      }
+      .container{
+          display: flex;
+          flex-direction: column;
+          width: 100vw;
+          height: 100vh;
+          padding: 20px;
+      }
+header,main,aside,footer{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    
+ 
+}
+header,main,footer,aside,.main-content{
+    display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+header{
+ min-height: 18vh;
+ background:var( --background-color);
+ border: 2px solid var(--border-color);
+ border-radius: 15px;
+
+}
+main{
+    min-height:52vh;
+    gap:20px;
+}
+footer{
+    min-height: 18vh;
+    border: 2px solid var(--border-color);
+ border-radius: 15px;
+ background:var( --background-color);
+    
+}
+.container > *:not(*:last-child){
+    margin-bottom: 20px;
+
+}
+main > *{
+    height: 100%;
+    background:var( --background-color);
+}
+main aside{
+    width: 20%;
+flex: 1 1 15%;
+border: 2px solid var( --border-color);
+ border-radius: 15px;
+
+}
+.main-content{
+flex: 1 1 80%;
+border: 2px solid ;
+ border-radius: 15px;
+ border: 2px solid var( --border-color);
+}
+    </style>
+  </head>
+  <body>
+<div class="container">
+        <header>Page Header Section</header>
+<main>
+    <aside>Left <br> Navigation</aside>
+    <div class="main-content">Main Content</div>
+  
+</main>
+        <footer>Footer Section</footer>
+    </div>
+
+  </body>
+</html>

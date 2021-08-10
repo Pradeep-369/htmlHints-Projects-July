@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaasmiri- Chudi Dress</title>
+    <link rel="stylesheet" href="item.css" />
+    <link rel="stylesheet" href="Product_Landing_Page.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navigation">
+      <ul class="d-flex">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li>
+          <div class="search-box">
+            <span class="search-icon"><i class="fa fa-search"></i></span>
+            <input type="search" name="" id="search" class="search-input" />
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="d-flex nav-styles">
+      <nav>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"
+          ><span class="nav-icon"></span
+        ></label>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact </a></li>
+        </ul>
+        <ul class="down">
+          <li><a href="#">Home</a></li>
+          <li></li>
+        </ul>
+      </nav>
+      <div class="main">
+        <div class="image-container">
+          <img src="images/extra-05150767-removebg-preview.png" alt="" />
+        </div>
+        <div class="product-details">
+          <h3>Kaasmiri - Chudi Dress(New Design)</h3>
+          <p class="price">
+            Price : 1599 INR<a href="#">Delivery and return Info</a>
+          </p>
+          <p class="color">Color: <span style="color: black">Black</span></p>
+          <div class="sm-con">
+            <dv class="label-flex">
+              <label for="size"><small>Size</small></label>
+              <small><a href="#">Find your Correct fit</a></small>
+            </dv>
+            <form action="">
+              <select name="size" id="size">
+                <option value="Please select" selected>Please Select</option>
+                <option value="small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </form>
+          </div>
+          <button onclick="makePay()" class="btn">Buy</button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script>
+    var options = {
+      key: "rzp_test_RxZQzU8tDRnEKl",
+      amount: "159900",
+      currency: "INR",
+      name: "Online Shop",
+      description: "This is For Your Checked Item Pay",
+      image:
+        "https://i.pinimg.com/originals/51/6a/dd/516add894c6ec82132725abea44f1d23.jpg",
+      order_id: "",
+      handler: function (response) {
+        alert(response.razorpay_payment_id);
+      },
+      prefill: {
+        name: "You Name",
+        email: "example@gmail.com",
+        contact: "Enter Your Mobile Number",
+      },
+      notes: {
+        address: "Example Corpration NYC",
+      },
+      theme: {
+        color: "#77bdb6",
+      },
+    };
+    var rzp1 = new Razorpay(options);
+    rzp1.on("payment.failed", function (response) {
+      alert(response.error.code);
+      alert(response.error.description);
+      alert(response.error.source);
+      alert(response.error.step);
+      alert(response.error.reason);
+      alert(response.error.metadata.order_id);
+      alert(response.error.metadata.payment_id);
+    });
+
+    function makePay() {
+      rzp1.open();
+      e.preventDefault();
+    }
+  </script>
+</html>

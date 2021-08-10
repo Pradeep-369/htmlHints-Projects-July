@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML- Hint Project 01(a)</title>
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      body,
+      *,
+      ::after,
+      ::before {
+        box-sizing: inherit;
+        padding: 0;
+        margin: 0;
+      }
+      .container{
+          display: flex;
+          flex-direction: column;
+          width: 100vw;
+          height: 100vh;
+      }
+header,main,nav,footer{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+header,main,footer,nav{
+    display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+header{
+ min-height: 20vh;
+ background: #fec9fd;
+}
+nav{
+    min-height:  8vh;
+    background: #9a15ec;
+    color:#eeb3fe;
+}
+main{
+    min-height: 50vh;
+}
+footer{
+    min-height:22vh;
+    background: #cb87f6;
+}
+    </style>
+  </head>
+  <body>
+<div class="container">
+        <header>Header</header>
+        <nav>Navigation Bar</nav>
+        <main>Main Content</main>
+        <footer>Footer</footer>
+    </div>
+
+  </body>
+</html>
